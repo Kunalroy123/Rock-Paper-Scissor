@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h1{
+    background-color: rgb(3, 3, 77);
+    color: white;
+    height: 5rem;
+    line-height: 5rem;
+    text-align: center;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+    gap: 4rem;
+}
+
+@media only screen and (max-width: 480px) {
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 4rem;
+        gap: 2rem;
+    }
+}
+
+.emoji{
+    height: 25vh;
+    width: 25vh;
+    border: none;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 480px) {
+    .emoji{
+        height: 10vh;
+        width: 10vh;
+    }
+}
+
+.emoji:hover{
+    border: 5px solid black;
+    opacity: 50%;
+}
+
+#rock p{
+    font-size: 7rem;
+    background-color: rgb(255, 123, 0);
+}
+
+#paper p{
+    font-size: 7rem;
+    background-color: rgb(235, 13, 235);
+}
+
+#scissors p{
+    font-size: 7rem;
+    background-color: rgb(68, 167, 224);
+}
+
+@media only screen and (max-width: 480px) {
+    #rock p{
+        font-size: 4rem;
+    }
+}
+@media only screen and (max-width: 480px) {
+    #paper p{
+        font-size: 4rem;
+    }
+}
+@media only screen and (max-width: 480px) {
+    #scissors p{
+        font-size: 4rem;
+    }
+}
+
+.score-board{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    font-size: 2rem;
+    margin-top: 5rem;
+}
+
+#user-score,
+#comp-score{
+    font-size: 4rem;
+}
+
+.msg-container{
+    margin-top: 5rem;
+}
+
+#msg{
+background-color: black;
+color: white;
+font-size: 2rem;
+display: inline;
+padding: 1rem;
+border-radius: 1rem;
+text-overflow: clip;
+}
